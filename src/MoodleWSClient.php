@@ -36,6 +36,23 @@ class MoodleWSClient
         }
     }
 
+        /**
+     * Setup proxy
+     * @param string $host
+     * @param int $port
+     * @param string $user Optional.
+     * @param string $pass Optional.
+     */
+    public function setupProxy($host, $port, $user = NULL, $pass = NULL)
+    {
+        $this->curl_options[CURLOPT_PROXYTYPE] = 'HTTP';
+        $this->curl_options[CURLOPT_PROXY] = $host;
+        $this->curl_options[CURLOPT_PROXYPORT] = $port;
+        if ($user && $pass) {
+            $this->curl_options[CURLOPT_PROXYUSERPWD] = $user . ":" . $pass;
+        }
+    }
+
     public function setToken($token) {
         $this->token = $token;
     }
