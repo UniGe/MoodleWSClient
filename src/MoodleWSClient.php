@@ -36,8 +36,9 @@ class MoodleWSClient
         }
     }
 
-        /**
+    /**
      * Setup proxy
+     * 
      * @param string $host
      * @param int $port
      * @param string $user Optional.
@@ -200,9 +201,7 @@ class MoodleWSClient
      *
      * @param type $file
      */
-    public function upload($filename) {
-        $filepath = '/compiti/';
-
+    public function upload($filename, $filepath = '/') {
         $params = [
             'file_box' => new \CURLFile($filename),
             'filepath' => $filepath,
