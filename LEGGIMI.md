@@ -1,4 +1,4 @@
-Un client per i web services di Moodle
+# Un client "magico" per i web services di Moodle
 
 == Uso ==
 
