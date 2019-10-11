@@ -2,14 +2,19 @@
     "name": "unige/moodlewsclient",
     "type": "library",
     "description": "Client for Moodle web services",
-    "version": "1.0.0",
-    "license": "MIT",
+    "version": "0.1.0",
+    "license": "GPL",
     "authors": [
         {
             "name": "Servizio e-learning Università di Genova",
             "email": "staff@aulaweb.unige.it",
             "role": "Developer"
-        }
+        },
+        {
+            "name": "Marco Ferrante",
+            "email": "marco@csita.unige.it",
+            "role": "Developer"
+        }        
     ],
     "require": {
         "psr/log": "^1.0.0"
