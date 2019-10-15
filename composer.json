@@ -3,7 +3,7 @@
     "type": "library",
     "description": "Client for Moodle web services",
     "version": "0.1.0",
-    "license": "GPL",
+    "license": "GPL-3.0-only",
     "authors": [
         {
             "name": "Servizio e-learning Università di Genova",
